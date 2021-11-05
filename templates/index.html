@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ML API</title>
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      
+          <style>
+              .dropbtn {
+                background-color: #04AA6D;
+                color: white;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+              }
+               
+              .dropdown {
+                position: relative;
+                display: inline-block;
+              }
+               
+              .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+              }
+               
+              .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+              }
+               
+              .dropdown-content a:hover {background-color: #ddd;}
+               
+              .dropdown:hover .dropdown-content {display: block;}
+               
+              .dropdown:hover .dropbtn {background-color: #3e8e41;}
+              </style>
+          
+      
+      
+      </head>
+<body>
+    
+    <div class="login container">
+        <h1 class="text-primary"></h1>
+        <br>
+        <br>
+        <h2>Click Here to select algorithm</h2>
+        <form method="post">
+           <div class="dropdown">
+               <button class="dropbtn">Select Algorithm</button>
+               <div class="dropdown-content">
+                 <a  href="{{ url_for('linear') }}">Linear Regression Algorithm</a>
+                 <a  href="{{ url_for('decision') }}">Decision Tree Algorithm</a>
+                 
+               </div>
+             </div>
+        </form>
+    
+</body>
+</html>
